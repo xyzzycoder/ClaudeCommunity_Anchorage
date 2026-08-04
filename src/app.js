@@ -73,9 +73,16 @@ function renderWall() {
     if (filter !== "all" && card.topic !== filter) continue;
     const b = document.createElement("button");
     b.className = "card";
+    // Many writers labelled their card "Hope", "Fear" or "Question" themselves.
+    // That framing is theirs, so it's shown rather than flattened into "a card".
     b.innerHTML = `
       <img src="cards/${card.id}.jpg" alt="Handwritten index card: ${esc(card.excerpt)}">
-      <span class="tag">${esc(TOPICS[card.topic].label)}</span>
+      <span class="tag">
+        ${(card.kinds || [card.kind])
+          .map((k) => `<em class="kind kind-${esc(k)}">${esc(k)}</em>`)
+          .join("")}
+        ${esc(TOPICS[card.topic].label)}
+      </span>
       <p class="ex">${esc(card.excerpt)}</p>`;
     b.addEventListener("click", () => startInterview(card));
     wall.appendChild(b);

@@ -470,6 +470,7 @@ const CARDS = [
     id: "safeguards",
     topic: "trust",
     kind: "fear",
+    kinds: ["hope", "fear"],  // writer labelled all of these on the one card
     excerpt:
       "Fear: using a tool without knowing or trusting the safeguards that exist or do not exist.",
     full:
@@ -518,6 +519,7 @@ const CARDS = [
     id: "studying-effects",
     topic: "trust",
     kind: "question",
+    kinds: ["hope", "fear", "question"],  // writer labelled all of these on the one card
     excerpt: "How are we studying the effects of AI on individuals, teams, and communities?",
     full:
       "Hope: Abundance. More time for art, exploration, personal projects. Fear: " +
@@ -535,6 +537,7 @@ const CARDS = [
     id: "cat-out-of-bag",
     topic: "trust",
     kind: "question",
+    kinds: ["fear", "hope", "question"],  // writer labelled all of these on the one card
     excerpt: "Is the cat out of the bag already?",
     full:
       "Fear - inability to stop Alignment problems. Runaway. Hope - Net benefit With " +
@@ -705,6 +708,24 @@ const CARDS = [
       "One of the named competitors made this tool. You are asking a participant in the race to assess whether the race is dangerous, and it has every incentive to sound reasonable about it.",
   },
   {
+    id: "regulatory-capture",
+    topic: "power",
+    kind: "fear",
+    excerpt:
+      "Regulatory capture and ignorance: monopolistic steering of regulations… This is why we can't have nice things.",
+    full:
+      "Regulatory Capture and Ignorance. Monopolistic steering of Regulations making " +
+      "unsupportable(?) systems contributing to mental and social health concerns — And " +
+      "then poorly resolved/banned(?). This is why we cant have nice things.",
+    tradeoffs: [
+      "The mechanism named here is specific and well documented in other industries: the incumbent helps write the rules, and the rules turn out to favour incumbents.",
+      "It cuts against the instinct that regulation is automatically the answer. Who writes it matters more than whether it exists.",
+      "\"And then poorly resolved\" is the part worth sitting with — the pattern isn't that harm goes unaddressed forever, it's that it gets addressed late, badly, and after the damage.",
+    ],
+    wrong:
+      "This tool is made by a company that lobbies on AI regulation. On this card specifically, treat it as an interested party describing its own industry — the card's author is the one with the outside view.",
+  },
+  {
     id: "large-scale-issues",
     topic: "power",
     kind: "question",
@@ -866,6 +887,7 @@ const CARDS = [
     id: "cost-per-query",
     topic: "environment",
     kind: "question",
+    kinds: ["hope", "fear", "question"],  // writer labelled all of these on the one card
     excerpt:
       "How much does it \"cost\" every time I query an agent with a relatively straightforward question?",
     full:

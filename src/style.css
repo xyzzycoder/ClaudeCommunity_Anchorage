@@ -105,11 +105,20 @@ body {
   color: #3c3733;
 }
 .card .tag {
-  display: inline-block; margin: 11px 16px 0;
+  display: flex; align-items: center; gap: 8px; margin: 11px 16px 0;
   font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
   color: var(--terra-d);
 }
+
+/* The writer's own label for their card. Their framing, not ours. */
+.kind {
+  font-style: normal; font-weight: 600; font-size: 10px;
+  padding: 2px 7px; border-radius: 3px; letter-spacing: .08em;
+}
+.kind-question { background: #ecebe4; color: #55524a; }
+.kind-fear     { background: #f1e2d8; color: #8a4a28; }
+.kind-hope     { background: #e2ecdf; color: #3d6349; }
 
 .footnote {
   margin: 30px 0 60px; color: #8c837a; font-size: 14px;

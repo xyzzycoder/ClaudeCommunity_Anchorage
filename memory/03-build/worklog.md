@@ -18,6 +18,8 @@ or two — this is for "when did that break," not prose.
 | 17:10 | **Card set expanded 11 -> 37 across 6 topics.** 999 answer paths validated, zero missing content. Grid normalised to 3:2 crops. |
 | 17:35 | **Crops redone to show whole cards.** Ink-tight trimming was clipping the printed starburst and flattening every card to the same shape; a forced 3:2 ratio was worse. Now: proportional margin, no target ratio. |
 | 17:40 | Restored the original corkboard-photo crops for 10 cards — pushpins, tilt, board edge. Wall is now board photos + flatbed scans + phone photos, deliberately uneven. |
+| 18:20 | **Full OCR verification pass** — re-read all 37 card images against stored text. Found one real defect: the `not-challenged` crop contained a second, unlogged card. |
+| 18:25 | Recovered that card (`regulatory-capture`) — 38 cards. Writers' own Hope/Fear/Question labels now shown, including 4 cards labelled with more than one. |
 | | |
 
 ## Blockers hit
