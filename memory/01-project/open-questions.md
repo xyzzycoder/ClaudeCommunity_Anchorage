@@ -12,7 +12,7 @@ accept the risk — don't let them sit silently.
 | Q5 | Is there a real user in the room we can test with before 5:00? | Validation | Team | **Open** |
 | Q6 | Does the demo need to run offline / on venue wifi? | Architecture | Hosts | **Open — now blocking**, our output is model-generated live |
 | Q7 | Do we need API keys, and who's paying for tokens? | Build | Hosts | **Open** |
-| Q9 | Is it OK to display other attendees' handwritten cards publicly in a demo? | Demo | Hosts | **Open — ask before 6:00** |
+| Q9 | Is it OK to display other attendees' handwritten cards publicly? | Demo | Hosts | ⚠️ **Decided by Aaron 15:20** (D-007) — published. Still tell the hosts tonight. |
 | Q8 | Where does the project live after 7:30 — does anyone own it? | Handoff | Team + hosts | **Open** |
 
 ## Answered

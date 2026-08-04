@@ -11,6 +11,7 @@ or two — this is for "when did that break," not prose.
 | 14:40 | 11 cards cropped from the board photo to `src/cards/`; one dropped as unreadable. Transcription fixes: "resist us" (not "resistive"), brains card ends "...help people with disabilities." |
 | 15:05 | **Walking skeleton done.** Wall → interview → three-part output works end to end. Zero network calls, zero dependencies, opens from `file://`. |
 | 14:05 | **Project chosen** — guided companion for hard questions, seeded from the card wall. Cut nine topics to three. D-003/004/005 recorded; charter filled. |
+| 15:20 | Repo initialized and pushed public: `xyzzycoder/ClaudeCommunity_Anchorage`. Card-consent question raised; Aaron's call to publish everything (D-007). |
 | | |
 
 ## Blockers hit

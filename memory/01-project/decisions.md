@@ -124,4 +124,23 @@ Format:
 
 ---
 
-## D-007 — _next decision goes here_
+## D-007 — Publish the repo publicly, including all card images
+
+- **When:** 15:20 AKDT
+- **Decided by:** Aaron, after the consent concern was raised
+- **Context:** The repo contains ~50 attendees' handwriting — 11 cropped cards used
+  by the app, plus the full board photo. Several cards are personal ("my kids 9,
+  12, 15", "my grandchildren"). A public push is permanent and indexable, and the
+  hosts had not yet weighed in (Q9).
+- **Alternatives:** private repo until hosts confirm; public minus the full board
+  photo; hold the push entirely.
+- **Consequence:** repo is public at
+  `github.com/xyzzycoder/ClaudeCommunity_Anchorage`. Mitigations in place: no card
+  writer is named anywhere, and `README.md` carries a plain-language takedown offer.
+- **Still worth doing:** mention it to Kyle and Blythe tonight. Cheap now,
+  awkward later.
+- **Revisit if:** a card writer objects — honor it immediately, no discussion needed.
+
+---
+
+## D-008 — _next decision goes here_
