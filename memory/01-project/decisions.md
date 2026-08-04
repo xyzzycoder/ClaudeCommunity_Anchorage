@@ -163,4 +163,25 @@ Format:
 
 ---
 
-## D-009 — _next decision goes here_
+## D-009 — Let the card images stay uneven
+
+- **When:** 17:40 AKDT
+- **Decided by:** Aaron
+- **Context:** The flatbed scans were being cropped tight to the handwriting and
+  then normalised in CSS to a uniform 3:2 grid. It looked tidy and read as stock
+  photography. Aaron's note: the earlier corkboard crops were *endearing* precisely
+  because they were inconsistent.
+- **Consequence:** three sources now coexist on the wall on purpose —
+  1. **corkboard photo** (10 cards): pushpins, tilt, board edge
+  2. **flatbed scans** (22 cards): clean, square-on, varied by how much was written
+  3. **phone photos** (5 cards): countertop visible, shot on the day
+  The CSS grid became a masonry column layout so nothing is stretched or cropped
+  to fit. 32 distinct aspect ratios across 37 cards.
+- **Why it matters beyond taste:** the whole product rests on these being real
+  cards written by real neighbours. Uniformity actively undercuts that claim.
+- **Revisit if:** a card becomes illegible at wall size — legibility wins over
+  character.
+
+---
+
+## D-010 — _next decision goes here_

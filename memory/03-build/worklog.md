@@ -16,6 +16,8 @@ or two — this is for "when did that break," not prose.
 | 16:20 | Inbox processed. 66 master card images split from 37 flatbed scans (`scripts/split_cards.py`). Seam-line detection failed twice — scans have inconsistent rules — so the splitter is driven by an explicit layout table taken from the OCR. |
 | 17:00 | 5 HEIC cards (photographed today, never OCR'd) converted, cropped off the countertop, transcribed, and added. |
 | 17:10 | **Card set expanded 11 -> 37 across 6 topics.** 999 answer paths validated, zero missing content. Grid normalised to 3:2 crops. |
+| 17:35 | **Crops redone to show whole cards.** Ink-tight trimming was clipping the printed starburst and flattening every card to the same shape; a forced 3:2 ratio was worse. Now: proportional margin, no target ratio. |
+| 17:40 | Restored the original corkboard-photo crops for 10 cards — pushpins, tilt, board edge. Wall is now board photos + flatbed scans + phone photos, deliberately uneven. |
 | | |
 
 ## Blockers hit

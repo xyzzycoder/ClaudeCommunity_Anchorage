@@ -25,6 +25,7 @@ except ImportError:
 INK = 205        # pixel value below this counts as content
 PAD = 45         # whitespace kept around trimmed content, px
 NOISE = 0.004    # a row/col with less ink than this counts as blank
+MARGIN = 0.09    # card margin kept around the ink, as a fraction of the panel
 
 # scan stem -> (rows, cols), from inbox/OCR/. Anything unlisted is a single card.
 LAYOUT = {
@@ -105,19 +106,31 @@ def panels(length, cuts):
     return list(zip(bounds, bounds[1:]))
 
 
-def trim(img):
-    """Crop to the ink, with padding. None if the panel holds nothing."""
-    g = img.convert("L")
+def card_box(panel):
+    """The card's extent within this panel: the ink, generously padded.
+
+    The cards are white on a white scanner bed, so the physical card edge is
+    genuinely undetectable — only the ink is. Two earlier attempts were wrong in
+    opposite directions: cropping tight to the ink clipped the printed starburst
+    and left every card the same shape, and forcing a 3:2 index-card ratio
+    produced absurd crops whenever the panel could not accommodate it.
+
+    So: pad by a fraction of the panel rather than a fixed number of pixels, and
+    let each card end up whatever shape it ends up. A card someone filled with
+    seven lines and a card holding one question are not the same shape, and the
+    difference is the point — it is evidence a person wrote it.
+    """
+    w, h = panel.size
+    g = panel.convert("L")
     bbox = g.point(lambda v: 255 if v < INK else 0).getbbox()
     if not bbox:
         return None
     l, t, r, b = bbox
     if (r - l) < 150 or (b - t) < 70:
         return None
-    return img.crop((
-        max(l - PAD, 0), max(t - PAD, 0),
-        min(r + PAD, img.width), min(b + PAD, img.height),
-    ))
+
+    pad = max(int(MARGIN * min(w, h)), PAD)
+    return (max(l - pad, 0), max(t - pad, 0), min(r + pad, w), min(b + pad, h))
 
 
 def split(path, out_dir):
@@ -129,9 +142,11 @@ def split(path, out_dir):
     for t, b in panels(im.height, cuts_for(arr, 0, rows)):
         band = arr[t:b]
         for l, r in panels(im.width, cuts_for(band, 1, cols)):
-            panel = trim(im.crop((l, t, r, b)))
-            if panel is None:
+            panel = im.crop((l, t, r, b))
+            box = card_box(panel)
+            if box is None:
                 continue
+            panel = panel.crop(box)
             n += 1
             dest = out_dir / f"{path.stem}-{n}.jpg"
             panel.save(dest, quality=88, optimize=True)
