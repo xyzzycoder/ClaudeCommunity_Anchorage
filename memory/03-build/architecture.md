@@ -114,4 +114,11 @@ actually work. Don't "fix" this into a JSON fetch.
 
 ## Repo
 
-_TBD_
+`github.com/xyzzycoder/ClaudeCommunity_Anchorage` (public, `main`)
+
+| Tag | What |
+|---|---|
+| `v0.1.0` | First functional demo — 15:28, 2026-08-04. Wall → interview → three-part output, fully static. |
+
+Tag before the freeze, not after: if a late change breaks something at 5:40, this
+is the commit to demo from.
