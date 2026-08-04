@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wall — questions Anchorage asked about AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <h1>The Wall</h1>
+    <p class="sub">On July&nbsp;21, a room in Anchorage wrote down what they wanted to know about AI.
+       Pick a card. We'll think it through together — you'll do the deciding.</p>
+    <button id="voice" class="voice" aria-pressed="false" title="Read questions aloud">
+      <span class="ico" aria-hidden="true">🔊</span><span class="lbl">Voice off</span>
+    </button>
+  </div>
+</header>
+
+<!-- ---------- view 1: the board ---------- -->
+<main id="board" class="wrap board-view">
+  <nav class="filters" aria-label="Filter cards by topic">
+    <button class="chip on" data-topic="all">All questions</button>
+  </nav>
+  <div id="wall" class="wall"></div>
+  <p class="footnote">
+    Eleven of about fifty cards, transcribed from the original board. No one is named.
+    <a href="#" id="showAbout">What is this?</a>
+  </p>
+</main>
+
+<!-- ---------- view 2: the interview ---------- -->
+<main id="interview" class="wrap interview-view" hidden>
+  <button class="back" data-back>← the wall</button>
+  <figure class="chosen">
+    <img id="ivCard" alt="">
+    <figcaption id="ivText"></figcaption>
+  </figure>
+
+  <div class="q-area">
+    <p class="step"><span id="qStep">1</span> of 3</p>
+    <h2 id="qAsk" aria-live="polite"></h2>
+    <div id="qOpts" class="opts"></div>
+  </div>
+</main>
+
+<!-- ---------- view 3: the response ---------- -->
+<main id="result" class="wrap result-view" hidden>
+  <button class="back" data-back>← the wall</button>
+  <figure class="chosen small">
+    <img id="rsCard" alt="">
+  </figure>
+
+  <section class="part">
+    <h2>The tradeoffs</h2>
+    <ul id="rsTrade"></ul>
+  </section>
+
+  <section class="part accent">
+    <h2>Three questions to ask yourself</h2>
+    <ol id="rsAsk"></ol>
+    <p class="tiny">These came from your three answers. They're yours to sit with — there's no submit button.</p>
+  </section>
+
+  <section class="part warn">
+    <h2>Where this might be wrong</h2>
+    <p id="rsWrong"></p>
+  </section>
+
+  <div class="end">
+    <button class="ghost" data-back>Another card</button>
+    <button class="ghost" id="redo">Answer differently</button>
+  </div>
+</main>
+
+<dialog id="about">
+  <h2>What is this?</h2>
+  <p>On July 21, 2026, about fifty people in Anchorage each wrote a hope, a fear, or a
+     question about AI on an index card and pinned it to a board. This is eleven of
+     those cards, in the original handwriting.</p>
+  <p>It was built on August 4, 2026 at the Claude Impact Lab at Alaska Pacific
+     University, by a team who met that afternoon.</p>
+  <p><strong>It does not answer the questions.</strong> It lays out the tradeoffs, hands you
+     three questions to take away, and tells you where it might be wrong. That's
+     deliberate — one of the cards on this wall asks how we make these tools
+     <em>resist us, to make us stronger rather than making us more comfortable.</em>
+     We took that seriously.</p>
+  <p class="tiny">Nothing you tap is stored or sent anywhere. This page works with the
+     network unplugged.</p>
+  <form method="dialog"><button class="ghost">Close</button></form>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
