@@ -143,4 +143,24 @@ Format:
 
 ---
 
-## D-008 — _next decision goes here_
+## D-008 — Expand from 3 topics to 6, and 11 cards to 37
+
+- **When:** 17:10 AKDT
+- **Decided by:** Aaron — asked for the full question-and-answer map once better
+  source material arrived
+- **Context:** The inbox delivered flatbed scans of the whole room (closing cards,
+  table worksheets, the full question wall) plus a complete OCR pass, and five
+  cards photographed today that had never been transcribed.
+- **Consequence:** reverses the narrowing in [D-004](#d-004--cut-from-nine-topics-to-three).
+  Topics are now kids & school · reliance vs. thinking · when it's wrong · work &
+  the ladder · power & sovereignty · environment & cost. Aaron's original nine
+  topics are effectively covered.
+- **Why this is safe now and wasn't at 14:05:** the cut existed because authored
+  content is the expensive part under time pressure. The OCR removed the
+  transcription cost, and the per-topic prompt design means 6 topics cost 54 short
+  lines rather than 6 × 27 authored responses.
+- **Revisit if:** never today. The freeze still holds at 17:15.
+
+---
+
+## D-009 — _next decision goes here_

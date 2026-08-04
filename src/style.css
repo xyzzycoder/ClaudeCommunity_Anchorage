@@ -87,7 +87,19 @@ body {
 }
 .card:focus-visible { box-shadow: 0 0 0 3px var(--terra), var(--shadow); }
 
-.card img { display: block; width: 100%; height: auto; border-radius: 3px 3px 0 0; }
+/* Scans and phone photos arrive at wildly different aspect ratios. Normalise the
+   grid by cropping to a card shape, anchored top-left so the handwriting — which
+   always starts there — survives the crop. The full image is shown on the
+   interview and result views. */
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 3px 3px 0 0;
+  background: #fff;
+}
 
 .card .ex {
   margin: 12px 16px 0;

@@ -13,6 +13,9 @@ or two — this is for "when did that break," not prose.
 | 14:05 | **Project chosen** — guided companion for hard questions, seeded from the card wall. Cut nine topics to three. D-003/004/005 recorded; charter filled. |
 | 15:20 | Repo initialized and pushed public: `xyzzycoder/ClaudeCommunity_Anchorage`. Card-consent question raised; Aaron's call to publish everything (D-007). |
 | 15:28 | **Tagged `v0.1.0` — first functional demo.** Annotated tag pushed; lists what works and what's explicitly out. |
+| 16:20 | Inbox processed. 66 master card images split from 37 flatbed scans (`scripts/split_cards.py`). Seam-line detection failed twice — scans have inconsistent rules — so the splitter is driven by an explicit layout table taken from the OCR. |
+| 17:00 | 5 HEIC cards (photographed today, never OCR'd) converted, cropped off the countertop, transcribed, and added. |
+| 17:10 | **Card set expanded 11 -> 37 across 6 topics.** 999 answer paths validated, zero missing content. Grid normalised to 3:2 crops. |
 | | |
 
 ## Blockers hit
