@@ -46,6 +46,9 @@ voiceBtn.addEventListener("click", () => {
 
 /* ---------- the board ---------- */
 
+// The six cards Megan collected from other teams during the build.
+const EVENT_DAY = "Aug 4";
+
 let filter = "all";
 
 function renderFilters() {
@@ -83,7 +86,10 @@ function renderWall() {
           .join("")}
         ${esc(TOPICS[card.topic].label)}
       </span>
-      <p class="ex">${esc(card.excerpt)}</p>`;
+      <p class="ex">${esc(card.excerpt)}</p>
+      ${card.date === "2026-08-04"
+        ? `<p class="gathered">✳ brought back by Megan, ${esc(EVENT_DAY)}</p>`
+        : ""}`;
     b.addEventListener("click", () => startInterview(card));
     wall.appendChild(b);
   }

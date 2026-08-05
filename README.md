@@ -7,6 +7,10 @@ at Alaska Pacific University, by a team that met that afternoon:
 
 **Mary · Sam · Anna · Teresa · Cory · ✳ Megan ✳ · Aaron**
 
+Six of the cards here were written on the day of the build rather than at the July
+session — ✳ **Megan** walked the room and brought them back from other teams. They
+are marked as hers on the wall.
+
 ---
 
 ## What it is

@@ -120,12 +120,83 @@ body {
 .kind-fear     { background: #f1e2d8; color: #8a4a28; }
 .kind-hope     { background: #e2ecdf; color: #3d6349; }
 
+/* the six cards Megan walked the room for */
+.gathered {
+  margin: 10px 16px 0; padding-top: 9px;
+  border-top: 1px solid var(--rule);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 11.5px; letter-spacing: .02em; color: var(--terra-d);
+}
+
 .footnote {
   margin: 30px 0 10px; color: #8c837a; font-size: 14px;
 }
 .footnote a { color: #b8ada2; }
 
-.team { margin: 0 0 60px; color: #8c837a; font-size: 14px; }
+/* ---------- crew ---------- */
+
+.crew {
+  margin: 44px 0 70px;
+  padding-top: 34px;
+  border-top: 1px solid #332f2b;
+}
+.crew h2 {
+  margin: 0 0 20px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: #7d736a;
+}
+
+.names {
+  list-style: none; margin: 0 0 30px; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 10px 12px;
+}
+.names li {
+  background: var(--paper); color: var(--ink);
+  border-radius: 3px; padding: 9px 18px;
+  font-size: 17px; box-shadow: 0 3px 12px rgba(0,0,0,.26);
+}
+.names li:nth-child(2n)   { transform: rotate(-.8deg); }
+.names li:nth-child(3n+1) { transform: rotate(.9deg); }
+
+/* Megan's splash. The starburst is the mark printed on every card in the room —
+   here it's drawn rather than photographed, and it turns. */
+.splash {
+  margin: 0; display: flex; align-items: center; gap: 22px;
+  background: var(--paper); border-radius: 4px;
+  border-left: 4px solid var(--terra);
+  padding: 22px 26px; max-width: 620px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.34);
+}
+.burst { flex: 0 0 74px; line-height: 0; }
+.burst svg { display: block; width: 74px; height: 74px; }
+.burst .rays {
+  fill: var(--terra);
+  /* transform-box is required: without it CSS reads transform-origin in screen
+     pixels rather than viewBox units, and the rays swing off-centre. */
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  animation: spin 26s linear infinite;
+}
+.burst use { animation: pulse 3.4s ease-in-out infinite; }
+.burst use:nth-child(2n) { animation-delay: -1.7s; }
+
+@keyframes spin  { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
+
+.splash figcaption { display: flex; flex-direction: column; gap: 5px; }
+.splash strong {
+  font-size: 25px; font-weight: 600; letter-spacing: -.01em;
+}
+.splash span { font-size: 15.5px; line-height: 1.55; color: #4a443e; }
+.splash b { font-weight: 600; color: var(--terra-d); }
+
+@media (max-width: 560px) {
+  .splash { flex-direction: column; align-items: flex-start; gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .burst .rays, .burst use { animation: none; }
+}
 
 /* Megan, in stars — the starburst is the mark printed on every card in the room. */
 .starred {

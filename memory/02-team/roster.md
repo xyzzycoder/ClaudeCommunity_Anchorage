@@ -14,11 +14,17 @@ demo?" at 5:40.
 | Anna | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 | Teresa | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 | Cory | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| **Megan** ✳ | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| **Megan** ✳ | _TBD_ | _TBD_ | **Gathering questions from other teams** — walked the room and brought back the six cards written on the day | _TBD_ |
 | Aaron Morse | _TBD_ | _TBD_ | _TBD_ | aaron.morse@gmail.com |
 
-Seven people who met at 12:45. Megan is credited in stars — in the app, in the
-README, and here — at Aaron's direction.
+Seven people who met at 12:45.
+
+Megan is credited in stars — in the app, in the README, and here — at Aaron's
+direction. The substance behind it: **every card on the wall written on August 4
+rather than July 21 exists because she went and asked other teams for them.** Six
+cards, and they shifted the balance of the whole collection toward energy and
+infrastructure, which the July board had barely touched. Each is marked on the
+wall with her name.
 
 ## Roles to fill
 
