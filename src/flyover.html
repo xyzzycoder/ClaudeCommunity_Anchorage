@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wall — handwriting flyover (experiment)</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flyover.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <h1>The Wall</h1>
+    <p class="sub"><b class="lab">Experiment</b> Hover any card for a note on the
+       handwriting. Everything else works as normal.</p>
+    <button id="voice" class="voice" aria-pressed="false" title="Read questions aloud">
+      <span class="ico" aria-hidden="true">🔊</span><span class="lbl">Voice off</span>
+    </button>
+  </div>
+</header>
+
+<!-- ---------- view 1: the board ---------- -->
+<main id="board" class="wrap board-view">
+  <nav class="filters" aria-label="Filter cards by topic">
+    <button class="chip on" data-topic="all">All questions</button>
+  </nav>
+  <div id="wall" class="wall"></div>
+  <p class="footnote">
+    Thirty-eight of about fifty cards, transcribed from the original board. No card
+    writer is named. <a href="#" id="showAbout">What is this?</a>
+  </p>
+
+  <section class="crew" aria-labelledby="crewTitle">
+    <h2 id="crewTitle">Built in one afternoon by</h2>
+
+    <ul class="names">
+      <li>Mary</li><li>Sam</li><li>Anna</li>
+      <li>Teresa</li><li>Cory</li><li>Aaron</li>
+    </ul>
+
+    <figure class="splash">
+      <span class="burst" aria-hidden="true">
+        <svg viewBox="0 0 100 100" role="presentation">
+          <g class="rays">
+            <use href="#ray" transform="rotate(0 50 50)"/><use href="#ray" transform="rotate(30 50 50)"/>
+            <use href="#ray" transform="rotate(60 50 50)"/><use href="#ray" transform="rotate(90 50 50)"/>
+            <use href="#ray" transform="rotate(120 50 50)"/><use href="#ray" transform="rotate(150 50 50)"/>
+            <use href="#ray" transform="rotate(180 50 50)"/><use href="#ray" transform="rotate(210 50 50)"/>
+            <use href="#ray" transform="rotate(240 50 50)"/><use href="#ray" transform="rotate(270 50 50)"/>
+            <use href="#ray" transform="rotate(300 50 50)"/><use href="#ray" transform="rotate(330 50 50)"/>
+          </g>
+          <defs>
+            <path id="ray" d="M50 8 L53.4 40 L50 46 L46.6 40 Z"/>
+            <!-- four-point sparkle, shared by the twinkles on the name -->
+            <path id="spark"
+                  d="M12 0 C12 6.6 17.4 12 24 12 C17.4 12 12 17.4 12 24
+                     C12 17.4 6.6 12 0 12 C6.6 12 12 6.6 12 0 Z"/>
+          </defs>
+        </svg>
+      </span>
+      <figcaption>
+        <strong class="name">
+          Megan
+          <span class="sparks" aria-hidden="true">
+            <svg class="s1" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s2" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s3" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s4" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s5" viewBox="0 0 24 24"><use href="#spark"/></svg>
+          </span>
+        </strong>
+        <span>walked the room and brought back <b>six questions</b> from other
+              teams — the only cards here written on the day.</span>
+      </figcaption>
+    </figure>
+  </section>
+</main>
+
+<!-- ---------- view 2: the interview ---------- -->
+<main id="interview" class="wrap interview-view" hidden>
+  <button class="back" data-back>← the wall</button>
+  <figure class="chosen">
+    <img id="ivCard" alt="">
+    <figcaption id="ivText"></figcaption>
+  </figure>
+
+  <div class="q-area">
+    <p class="step"><span id="qStep">1</span> of 3</p>
+    <h2 id="qAsk" aria-live="polite"></h2>
+    <div id="qOpts" class="opts"></div>
+  </div>
+</main>
+
+<!-- ---------- view 3: the response ---------- -->
+<main id="result" class="wrap result-view" hidden>
+  <button class="back" data-back>← the wall</button>
+  <figure class="chosen small">
+    <img id="rsCard" alt="">
+  </figure>
+
+  <section class="part">
+    <h2>The tradeoffs</h2>
+    <ul id="rsTrade"></ul>
+  </section>
+
+  <section class="part accent">
+    <h2>Three questions to ask yourself</h2>
+    <ol id="rsAsk"></ol>
+    <p class="tiny">These came from your three answers. They're yours to sit with — there's no submit button.</p>
+  </section>
+
+  <section class="part warn">
+    <h2>Where this might be wrong</h2>
+    <p id="rsWrong"></p>
+  </section>
+
+  <div class="end">
+    <button class="ghost" data-back>Another card</button>
+    <button class="ghost" id="redo">Answer differently</button>
+  </div>
+</main>
+
+<dialog id="about">
+  <h2>What is this?</h2>
+  <p>On July 21, 2026, about fifty people in Anchorage each wrote a hope, a fear, or a
+     question about AI on an index card and pinned it to a board. This is thirty-eight of
+     those cards, in the original handwriting.</p>
+  <p>It was built on August 4, 2026 at the Claude Impact Lab at Alaska Pacific
+     University, by a team who met that afternoon:</p>
+
+  <p class="credits">
+    Mary · Sam · Anna · Teresa · Cory ·
+    <span class="starred"><b>Megan</b></span> ·
+    Aaron
+  </p>
+  <p><strong>It does not answer the questions.</strong> It lays out the tradeoffs, hands you
+     three questions to take away, and tells you where it might be wrong. That's
+     deliberate — one of the cards on this wall asks how we make these tools
+     <em>resist us, to make us stronger rather than making us more comfortable.</em>
+     We took that seriously.</p>
+  <p class="tiny">Nothing you tap is stored or sent anywhere. This page works with the
+     network unplugged.</p>
+  <form method="dialog"><button class="ghost">Close</button></form>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="flyover.js"></script>
+</body>
+</html>

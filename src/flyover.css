@@ -1,0 +1,65 @@
+/* EXPERIMENT — layered on top of style.css by flyover.html only.
+   Not loaded by the real app. */
+
+.lab {
+  display: inline-block;
+  background: var(--terra); color: #fff;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 10px; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 3px 8px; border-radius: 3px;
+  margin-right: 10px; vertical-align: 2px;
+}
+
+/* ---------- toggle ---------- */
+
+/* Reuses .voice, which style.css pins to the top right — this sits to its left. */
+.fly-toggle { right: 152px; }
+.fly-toggle .ico { color: var(--terra); font-size: 13px; }
+.fly-toggle[aria-pressed="true"] .ico { color: #fff; }
+
+/* ---------- the panel ---------- */
+
+.flyover {
+  position: fixed; z-index: 50;
+  max-width: 330px;
+  background: var(--paper); color: var(--ink);
+  border-radius: 4px;
+  border-left: 3px solid var(--terra);
+  padding: 16px 18px 14px;
+  box-shadow: 0 16px 44px rgba(0,0,0,.5);
+  pointer-events: none;
+  animation: flyin .16s ease-out;
+}
+
+@keyframes flyin {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.fly-eyebrow {
+  margin: 0 0 8px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 10.5px; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--terra-d);
+}
+
+.fly-body { margin: 0; font-size: 15px; line-height: 1.55; }
+
+.fly-disclaimer {
+  margin: 12px 0 0; padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px; line-height: 1.5; color: var(--muted);
+}
+
+/* ---------- responsive / motion ---------- */
+
+@media (max-width: 780px) {
+  .fly-toggle { position: static; margin: 18px 10px 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flyover { animation: none; }
+}

@@ -25,6 +25,8 @@ or two — this is for "when did that break," not prose.
 | 18:55 | New card added from the floor: *"How can we put the genie back in the bottle if things get out of hand?"* — **39 cards**, 1053 paths. |
 | 19:05 | Original scans untracked (`assets/scans/` git-ignored). Tracked content 124 MB → 43 MB. Files kept on Aaron's disk; still present in git history. |
 | 19:20 | Crew shout-outs on the main screen; Megan gets an animated starburst splash for gathering six questions from other teams. Her six cards are individually credited on the wall. |
+| 19:30 | Animated sparkles on Megan's name; first pass overlapped the sentence, repositioned. |
+| 19:45 | Handwriting-flyover experiment kept — 39 notes, on/off toggle, unlinked from the app. |
 | | |
 
 ## Blockers hit

@@ -57,6 +57,7 @@ reasoning.
 | Path | What |
 |---|---|
 | `src/` | The app. Start at `index.html`. |
+| `src/flyover.*` | An experiment, not part of the app — see below |
 | `src/cards/` | The eleven cards, cropped from the board photo |
 | `memory/` | Project memory — context, decisions, learnings, handoff |
 | `assets/` | Source material: the board photo, event screenshots |
@@ -65,6 +66,29 @@ reasoning.
 **Start with [`memory/README.md`](memory/README.md)** if you're picking this up
 cold. It has a read-this-first order and a decision log explaining why the project
 is shaped the way it is.
+
+## The handwriting experiment
+
+`src/flyover.html` is a side experiment, deliberately **not linked from the app**.
+It loads the same wall and adds a hover panel with a note on each card's
+handwriting.
+
+Two rules governed every note in `src/flyover.js`, and they're restated at the top
+of that file:
+
+1. **Graphology is not a real science.** It tells you nothing about a person's
+   character, and the panel says so on screen.
+2. **These are strangers who wrote something honest.** Every note is about the
+   marks on the page — pressure, slant, corrections, what happened when someone
+   ran out of room — and any leap beyond that is visibly a joke at nobody's
+   expense.
+
+The test while writing was *would this make its writer wince if they read it over
+your shoulder?* Several drafts got cut on exactly that. If you extend it, keep the
+test.
+
+Delete `src/flyover.html`, `src/flyover.css` and `src/flyover.js` and the app is
+untouched.
 
 ## Credit and consent
 

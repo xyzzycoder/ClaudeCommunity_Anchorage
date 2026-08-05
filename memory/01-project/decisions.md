@@ -203,4 +203,25 @@ Format:
 
 ---
 
-## D-011 — _next decision goes here_
+## D-011 — Keep the handwriting flyover as an unlinked experiment
+
+- **When:** 19:45 AKDT
+- **Decided by:** Aaron
+- **Context:** Asked for a "flyover display (humorous but respectful/kind) of
+  handwriting analysis" on each card, explicitly as something to look at rather
+  than ship. It landed well, so it stays.
+- **Consequence:** three files — `src/flyover.{html,css,js}` — sharing the app's
+  data and styles but **not linked from `index.html`**. Reachable by URL, invisible
+  to a demo visitor. Deleting the three files leaves the app untouched.
+- **The constraint that shaped it:** graphology is pseudoscience, and these cards
+  were written by strangers who will be in the room. Every note is an observation
+  about marks on paper; the panel states on screen that handwriting analysis tells
+  you nothing real about a person. The authoring test — *would this make its writer
+  wince if they read it over your shoulder?* — is written into the top of
+  `flyover.js` so it survives whoever edits it next.
+- **Revisit if:** anyone wants it linked from the app. That's a different decision
+  from keeping it in the repo, and it should be made with the hosts, not by us.
+
+---
+
+## D-012 — _next decision goes here_
