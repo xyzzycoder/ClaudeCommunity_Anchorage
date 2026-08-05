@@ -51,11 +51,24 @@
           </g>
           <defs>
             <path id="ray" d="M50 8 L53.4 40 L50 46 L46.6 40 Z"/>
+            <!-- four-point sparkle, shared by the twinkles on the name -->
+            <path id="spark"
+                  d="M12 0 C12 6.6 17.4 12 24 12 C17.4 12 12 17.4 12 24
+                     C12 17.4 6.6 12 0 12 C6.6 12 12 6.6 12 0 Z"/>
           </defs>
         </svg>
       </span>
       <figcaption>
-        <strong>Megan</strong>
+        <strong class="name">
+          Megan
+          <span class="sparks" aria-hidden="true">
+            <svg class="s1" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s2" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s3" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s4" viewBox="0 0 24 24"><use href="#spark"/></svg>
+            <svg class="s5" viewBox="0 0 24 24"><use href="#spark"/></svg>
+          </span>
+        </strong>
         <span>walked the room and brought back <b>six questions</b> from other
               teams — the only cards here written on the day.</span>
       </figcaption>

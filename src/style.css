@@ -188,6 +188,31 @@ body {
 .splash strong {
   font-size: 25px; font-weight: 600; letter-spacing: -.01em;
 }
+
+/* Sparkles on the name. Positioned around the word rather than over it, so the
+   name stays legible — the twinkle is decoration, not a texture on the text. */
+.name { position: relative; display: inline-block; align-self: flex-start; }
+.sparks { position: absolute; inset: -14px -20px; pointer-events: none; }
+.sparks svg {
+  position: absolute;
+  fill: var(--terra);
+  opacity: 0;
+  transform: scale(0);
+  animation: twinkle 2.6s ease-in-out infinite;
+}
+/* Scattered by hand — an even distribution reads as a loading spinner. All of
+   them sit above or beside the word; none below, or they land on the sentence. */
+.sparks .s1 { width: 13px; height: 13px; top:  2px; left: -15px; animation-delay: 0s; }
+.sparks .s2 { width:  9px; height:  9px; top: -6px; left:  30px; animation-delay: .45s; }
+.sparks .s3 { width: 16px; height: 16px; top: -9px; right:  2px; animation-delay: .9s; fill: var(--terra-d); }
+.sparks .s4 { width:  8px; height:  8px; top:  16px; right: -14px; animation-delay: 1.4s; }
+.sparks .s5 { width: 11px; height: 11px; top: -11px; left:  74px; animation-delay: 1.9s; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0)   rotate(0deg); }
+  35%      { opacity: 1; transform: scale(1)   rotate(45deg); }
+  60%      { opacity: .8; transform: scale(.75) rotate(70deg); }
+}
 .splash span { font-size: 15.5px; line-height: 1.55; color: #4a443e; }
 .splash b { font-weight: 600; color: var(--terra-d); }
 
@@ -196,6 +221,8 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .burst .rays, .burst use { animation: none; }
+  /* sparkles hold still and visible rather than vanishing entirely */
+  .sparks svg { animation: none; opacity: .9; transform: scale(1) rotate(45deg); }
 }
 
 /* Megan, in stars — the starburst is the mark printed on every card in the room. */
