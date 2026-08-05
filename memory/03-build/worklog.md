@@ -23,6 +23,7 @@ or two — this is for "when did that break," not prose.
 | 18:45 | Team credited in the app, README and roster: Mary, Sam, Anna, Teresa, Cory, **Megan** (in stars), Aaron. Q2 closed. |
 | 18:50 | Inbox filed and cleared — scans to `assets/scans/`, phone originals to `assets/prior-sessions/originals/`, OCR to `assets/OCR/`. `inbox/README.md` documents the drop-folder workflow. |
 | 18:55 | New card added from the floor: *"How can we put the genie back in the bottle if things get out of hand?"* — **39 cards**, 1053 paths. |
+| 19:05 | Original scans untracked (`assets/scans/` git-ignored). Tracked content 124 MB → 43 MB. Files kept on Aaron's disk; still present in git history. |
 | | |
 
 ## Blockers hit

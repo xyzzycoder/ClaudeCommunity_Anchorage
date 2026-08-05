@@ -10,7 +10,7 @@ processed yet.
 
 | You drop | Where it ends up | How |
 |---|---|---|
-| `scan*.jpg` — flatbed scans of cards | `assets/scans/` (source) and `assets/cards-master/` (one image per card) | `python3 scripts/split_cards.py` — needs a row/column entry in that script's `LAYOUT` table |
+| `scan*.jpg` — flatbed scans of cards | `assets/scans/` (local only, git-ignored) and `assets/cards-master/` (one image per card, tracked) | `python3 scripts/split_cards.py` — needs a row/column entry in that script's `LAYOUT` table |
 | `*.heic` / `*.jpg` — phone photos of a card | `assets/prior-sessions/originals/` and `assets/cards-master/` | converted with `sips`, cropped, then read and transcribed by hand |
 | `*.md` — transcriptions | `assets/OCR/` | copied as-is, kept as provenance |
 

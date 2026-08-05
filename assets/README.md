@@ -30,6 +30,16 @@ Screenshots of the Luma event page for **Anchorage | Claude Impact Lab**
 
 Summarized in [memory/00-context/event-brief.md](../memory/00-context/event-brief.md).
 
+### `scans/` — not in the repo
+
+The 37 original flatbed scans live here locally but are **git-ignored**. They are
+only needed to re-run `scripts/split_cards.py`; everything downstream of them is
+tracked — the per-card masters in `cards-master/` and the images the app serves in
+`src/cards/`.
+
+If you need to re-split, get the scans from whoever ran the scanner. If you only
+need the cards, you already have them.
+
 ## Adding more
 
 Pastes into the Claude session:

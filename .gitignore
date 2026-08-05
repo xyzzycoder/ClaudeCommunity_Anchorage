@@ -1,2 +1,7 @@
 .DS_Store
 *.log
+
+# Original flatbed scans — kept locally, not in the repo.
+# They are only needed to re-run scripts/split_cards.py; the per-card masters
+# in assets/cards-master/ and the images the app serves in src/cards/ are tracked.
+assets/scans/

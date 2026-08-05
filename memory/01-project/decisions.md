@@ -184,4 +184,23 @@ Format:
 
 ---
 
-## D-010 — _next decision goes here_
+## D-010 — Keep the original scans out of the repo
+
+- **When:** 19:05 AKDT
+- **Decided by:** Aaron
+- **Context:** Filing the inbox committed 14 MB of flatbed scans, pushing the repo
+  to 124 MB. They are pure source: everything derived from them — the per-card
+  masters and the images the app serves — is already tracked.
+- **Consequence:** `assets/scans/` is git-ignored. Tracked content drops from
+  ~124 MB to ~43 MB. `scripts/split_cards.py` can no longer be re-run from a fresh
+  clone, so the `LAYOUT` table in it and the masters in `assets/cards-master/`
+  become the record of how the cards were cut.
+- **Not done:** the scans remain in git *history*, so a fresh clone still pays for
+  them. Purging requires rewriting history and force-pushing a public branch —
+  destructive, and not something to do unasked.
+- **Revisit if:** clone size actually becomes a problem, or the scans need
+  re-splitting (get them from whoever ran the scanner).
+
+---
+
+## D-011 — _next decision goes here_

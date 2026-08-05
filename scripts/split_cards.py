@@ -8,6 +8,11 @@ card's own paragraphs. The OCR pass already established the layout of every
 scan, so that is the source of truth here — LAYOUT below records rows × columns
 per scan, and we take the widest interior gaps to place the cuts.
 
+The input scans are NOT in the repo (assets/scans/ is git-ignored — they were
+14 MB of source for images that are already committed downstream). This script
+is kept because it documents how the card images were produced and because it
+can be re-run if the scans are ever restored.
+
 Usage:
     python3 scripts/split_cards.py [--src inbox] [--out assets/cards-master]
 """
