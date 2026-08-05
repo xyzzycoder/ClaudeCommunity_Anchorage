@@ -763,6 +763,21 @@ const CARDS = [
   },
 
   {
+    id: "genie-back-in-bottle",
+    topic: "trust",
+    kind: "question",
+    date: "2026-08-04",
+    excerpt: "How can we put the genie back in the bottle if things get out of hand?",
+    full: "How can we put the genie back in the bottle if things get out of hand?",
+    tradeoffs: [
+      "The metaphor smuggles in its own answer — genies don't go back, which is why the phrase tends to end conversations rather than start them. Worth noticing before accepting it.",
+      "\"If things get out of hand\" is the more useful half. It implies a threshold, and a threshold is something you can define in advance and watch for, which is a real move.",
+      "Nothing gets un-invented. But leaded petrol, CFCs and asbestos were all rolled back after wide deployment — slower and more expensively than if anyone had acted early, and they were rolled back.",
+    ],
+    wrong:
+      "Someone at this same wall asked whether the cat is already out of the bag. Two people, the same night, reaching for the same image — that's worth more than this page's answer to either of them.",
+  },
+  {
     id: "discover-the-source",
     topic: "trust",
     kind: "question",

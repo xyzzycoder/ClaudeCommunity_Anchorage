@@ -3,7 +3,9 @@
 **Questions Anchorage asked about AI — and a way to think them through.**
 
 Built on August 4, 2026 at the [Claude Impact Lab](memory/00-context/event-brief.md)
-at Alaska Pacific University, by a team that met that afternoon.
+at Alaska Pacific University, by a team that met that afternoon:
+
+**Mary · Sam · Anna · Teresa · Cory · ✳ Megan ✳ · Aaron**
 
 ---
 
@@ -13,7 +15,7 @@ On July 21, 2026, about fifty people in Anchorage each wrote a hope, a fear, or 
 question about AI on an index card and pinned it to a board. The room's closing
 question was *where should Alaska start?* — and the answer was education and access.
 
-This is eleven of those cards, in the original handwriting. Pick one, answer three
+This is thirty-eight of those cards, in the original handwriting. Pick one, answer three
 questions, and you get:
 
 - **the tradeoffs**, named honestly

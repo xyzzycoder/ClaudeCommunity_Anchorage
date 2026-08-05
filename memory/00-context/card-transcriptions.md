@@ -9,10 +9,9 @@ uncertain read of the handwriting, and the writer's own spelling is kept through
 No card writer is named.
 
 **Labels are the writers' own.** Many cards carry an explicit *Hope*, *Fear* or
-*Question* heading, and several carry more than one — those are recorded rather than
-collapsed into a single category.
+*Question* heading, and several carry more than one — recorded rather than collapsed.
 
-**38 cards** across 6 topics.
+**39 cards** across 6 topics. 6 were written on the day of the build.
 
 ## Kids & school  (4)
 
@@ -88,7 +87,7 @@ collapsed into a single category.
 
 > I find that AI usage gives me answers but does not challenge me with alternate perspectives. As an example, if I ask a business question, and recieve an answer, I am not challenged by AI to consider alternative or conflictual perspectives. A friend or coworker would challenge me. AI does not. The scope of my thought is reduced.
 
-## When it's wrong  (8)
+## When it's wrong  (9)
 
 ### equitable-tool
 
@@ -138,6 +137,13 @@ collapsed into a single category.
 - **Writer's label:** fear + hope + question   **Written:** 2026-07-21
 
 > Fear - inability to stop Alignment problems. Runaway. Hope - Net benefit With New technology. Question - Is the cat out of the bag already?
+
+### genie-back-in-bottle
+
+- **Image:** [`src/cards/genie-back-in-bottle.jpg`](../../src/cards/genie-back-in-bottle.jpg)
+- **Writer's label:** question   **Written:** 2026-08-04
+
+> How can we put the genie back in the bottle if things get out of hand?
 
 ### discover-the-source
 

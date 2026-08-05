@@ -5,11 +5,20 @@ demo?" at 5:40.
 
 **Team name:** _TBD_
 **Table:** _TBD_
+**Members:** Mary · Sam · Anna · Teresa · Cory · **Megan** ✳ · Aaron
 
 | Name | Background / day job | Strengths they named | Owns | Contact after today |
 |---|---|---|---|---|
+| Mary | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Sam | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Anna | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Teresa | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Cory | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| **Megan** ✳ | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
 | Aaron Morse | _TBD_ | _TBD_ | _TBD_ | aaron.morse@gmail.com |
-| _TBD_ | | | | |
+
+Seven people who met at 12:45. Megan is credited in stars — in the app, in the
+README, and here — at Aaron's direction.
 
 ## Roles to fill
 

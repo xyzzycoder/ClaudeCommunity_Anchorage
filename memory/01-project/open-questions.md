@@ -6,7 +6,7 @@ accept the risk — don't let them sit silently.
 | # | Question | Blocks | Who can answer | Status |
 |---|---|---|---|---|
 | Q1 | ~~What did prior attendees actually say would be helpful?~~ | Charter | Aaron | ✅ **Answered 13:52** |
-| Q2 | Who is on our team and what can each person do? | Everything | Team, at 12:45 | **Open** |
+| Q2 | Who is on our team? | Everything | Team | ✅ **Answered 18:40** — Mary, Sam, Anna, Teresa, Cory, Megan, Aaron. Individual roles still unrecorded. |
 | Q3 | What's our table number / team assignment? | Logistics | Pre-event email | **Open** |
 | Q4 | Are other teams working the same angle (education vs. access)? | Scope | Ask hosts / neighboring tables early | **Open — ask now**, we're using the shared card wall |
 | Q5 | Is there a real user in the room we can test with before 5:00? | Validation | Team | **Open** |

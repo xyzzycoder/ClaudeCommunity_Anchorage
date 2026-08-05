@@ -121,9 +121,34 @@ body {
 .kind-hope     { background: #e2ecdf; color: #3d6349; }
 
 .footnote {
-  margin: 30px 0 60px; color: #8c837a; font-size: 14px;
+  margin: 30px 0 10px; color: #8c837a; font-size: 14px;
 }
 .footnote a { color: #b8ada2; }
+
+.team { margin: 0 0 60px; color: #8c837a; font-size: 14px; }
+
+/* Megan, in stars — the starburst is the mark printed on every card in the room. */
+.starred {
+  white-space: nowrap;
+  color: var(--paper);
+}
+.starred b { font-weight: 600; }
+.starred::before,
+.starred::after {
+  content: "✳";
+  color: var(--terra);
+  font-size: .95em;
+  padding: 0 .28em;
+  vertical-align: baseline;
+}
+
+.credits {
+  margin: 0 0 18px !important;
+  font-size: 16px !important;
+  line-height: 1.9;
+  color: var(--muted);
+}
+dialog .starred { color: var(--ink); }
 
 /* ---------- shared: sheet views ---------- */
 

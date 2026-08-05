@@ -20,6 +20,9 @@ or two — this is for "when did that break," not prose.
 | 17:40 | Restored the original corkboard-photo crops for 10 cards — pushpins, tilt, board edge. Wall is now board photos + flatbed scans + phone photos, deliberately uneven. |
 | 18:20 | **Full OCR verification pass** — re-read all 37 card images against stored text. Found one real defect: the `not-challenged` crop contained a second, unlogged card. |
 | 18:25 | Recovered that card (`regulatory-capture`) — 38 cards. Writers' own Hope/Fear/Question labels now shown, including 4 cards labelled with more than one. |
+| 18:45 | Team credited in the app, README and roster: Mary, Sam, Anna, Teresa, Cory, **Megan** (in stars), Aaron. Q2 closed. |
+| 18:50 | Inbox filed and cleared — scans to `assets/scans/`, phone originals to `assets/prior-sessions/originals/`, OCR to `assets/OCR/`. `inbox/README.md` documents the drop-folder workflow. |
+| 18:55 | New card added from the floor: *"How can we put the genie back in the bottle if things get out of hand?"* — **39 cards**, 1053 paths. |
 | | |
 
 ## Blockers hit
