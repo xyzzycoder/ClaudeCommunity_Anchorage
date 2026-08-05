@@ -15,11 +15,14 @@ are marked as hers on the wall.
 
 ## What it is
 
-On July 21, 2026, about fifty people in Anchorage each wrote a hope, a fear, or a
-question about AI on an index card and pinned it to a board. The room's closing
-question was *where should Alaska start?* — and the answer was education and access.
+On July 21, 2026, a full room in Anchorage spent two hours on one question: *what is
+AI doing to me, my kids, my community?* Attendees were asked for one hope, one fear
+and one hard question each and pinned them to a corkboard — 48 entries are
+documented. The night closed by naming where Alaska should start, on 11 further
+cards, and the answer was education and access.
 
-This is thirty-eight of those cards, in the original handwriting. Pick one, answer three
+Thirty-three of the cards here come from that board, in the original handwriting.
+Six more were written by other teams on August 4, the day this was built. Pick one, answer three
 questions, and you get:
 
 - **the tradeoffs**, named honestly

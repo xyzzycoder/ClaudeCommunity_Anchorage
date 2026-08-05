@@ -10,10 +10,12 @@ some of them wrote the cards on the screen.
 
 ## The thirty-second pitch
 
-> On July 21, about fifty people in Anchorage each wrote a hope, a fear, or a
-> question about AI on an index card and pinned it to a board.
+> On July 21, a full room in Anchorage spent two hours on one question: *what is AI
+> doing to me, my kids, my community?* Everyone was asked for one hope, one fear and
+> one hard question, and they pinned them to a corkboard.
 >
-> We counted them. **Thirty were questions. Twelve were fears. Four were hopes.**
+> We have 48 of those. **Roughly half are questions. About a quarter are fears.
+> Four are hopes.**
 >
 > That's not a frightened room. That's a room that doesn't know how to think about
 > this yet and is asking for help — and that's a completely different problem.
@@ -51,7 +53,7 @@ question about AI, and leave with better judgment rather than a borrowed answer.
 
 | Objective | Status |
 |---|---|
-| Ground it in what this community actually asked, not generic AI content | ✅ 39 real cards, in the writers' own hands |
+| Ground it in what this community actually asked, not generic AI content | ✅ 39 real cards, in the writers' own handwriting |
 | Never issue a verdict | ✅ Output is tradeoffs + questions + an admission of fallibility |
 | Cost a teacher zero prep time | ✅ Nothing to install, no account, no setup |
 | Survive a demo on shared venue wifi | ✅ Fully static — no server, no key, no network calls at all |
@@ -65,24 +67,40 @@ the questions, and it doesn't claim the six topics are the only ones that matter
 
 ## The numbers
 
-| | |
+### Safe to say — sourced
+
+| Claim | Source |
 |---|---|
-| Cards on the wall | **39** |
-| Self-applied labels | **30 questions · 12 fears · 4 hopes** |
-| Cards carrying more than one label | 4 |
-| Topics | 6 |
-| Distinct paths through the interview | **1,053** |
-| Cards gathered from other teams today | 6, all by Megan |
-| Network calls the app makes | **0** |
+| July 21, Anchorage, a full room, two hours, one question | The event page, verbatim |
+| The question was *"what is AI doing to me, my kids, my community?"* | The event page |
+| The night closed by naming where Alaska should start; the answer was education and access | The event page |
+| Attendees were asked for **one hope, one fear, one hard question** | The scan inventory that came with the material |
+| There were **5 tables** | The scan inventory |
+| **48** question-wall entries and **11** closing cards are documented | Counted from the scans |
+| Of the 48: ~24 read as questions, ~13 as fears, 4 as hopes, 5 mixed | Counted from the transcription tags |
+| **39** cards are in the app — 33 from July 21, 6 written August 4 | Our own data |
+| 1,053 distinct paths; 0 network calls | Measured |
 
-**The line that matters:** more than twice as many questions as fears and hopes
-combined. Every one of those labels was written by the person holding the pen —
-we didn't classify anything.
+### Do NOT say — these are not supported
 
-> **If someone suggests sentiment analysis**, the answer is that the writers
-> already did it, in their own handwriting. A classifier could only agree with them
-> (redundant) or disagree with them (telling someone their fear was neutral, in a
-> room where they're standing). We show what they wrote.
+| Don't say | Why |
+|---|---|
+| ~~"About fifty people were there"~~ | **We don't know the attendance.** The event page says "a full room." Each person was asked for three items, so 48 entries could be ~16 people or ~48. Say *"a full room"* — that's the sourced phrase. |
+| ~~"Every label was written by the person holding the pen"~~ | Only **8 of our 39** cards carry an explicit Hope/Fear/Question heading in the writer's hand. We assigned the other 31 from the content. |
+| ~~"We counted the room: 30 questions, 12 fears, 4 hopes"~~ | That's a count of **our 39 selected cards**, six of which were written on August 4. It is not a measurement of the July room. |
+
+**How to say the finding honestly:** *"Of the 48 entries we have from that board,
+roughly half are questions — about twice as many as fears. We didn't run any
+sentiment analysis; that's just reading them."*
+
+That still supports the whole thesis, and it survives someone in the audience
+asking where the number came from.
+
+> **If someone suggests sentiment analysis**, the answer is that a classifier could
+> only agree with the cards that are already labelled (redundant) or disagree with
+> them (telling someone their fear was neutral, in a room where they're standing).
+> And be straight that our own topic and label assignments are editorial, not
+> measurement.
 
 ---
 
@@ -105,8 +123,7 @@ failure mode the wall is worried about.
 
 **"A card was hiding inside another card."**
 One crop had quietly swallowed a second physical card. Its text was sitting there
-in the image and existed nowhere in our data. A verification pass over all 37
-images found it — *Regulatory Capture and Ignorance* — and it's on the wall now.
+in the image and existed nowhere in our data. A verification pass over every card image found it — *Regulatory Capture and Ignorance* — and it's on the wall now.
 Nobody would ever have known.
 
 **"The demo can't fail, because there's nothing to fail."**

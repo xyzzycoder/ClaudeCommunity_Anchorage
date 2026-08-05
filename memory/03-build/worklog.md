@@ -27,6 +27,7 @@ or two — this is for "when did that break," not prose.
 | 19:20 | Crew shout-outs on the main screen; Megan gets an animated starburst splash for gathering six questions from other teams. Her six cards are individually credited on the wall. |
 | 19:30 | Animated sparkles on Megan's name; first pass overlapped the sentence, repositioned. |
 | 19:45 | Handwriting-flyover experiment kept — 39 notes, on/off toggle, unlinked from the app. |
+| 20:10 | **Sourcing audit.** Three claims in the pitch failed against the primary sources — headcount, label provenance, and what the sentiment count measured. Corrected in the app, README and demo script. |
 | | |
 
 ## Blockers hit

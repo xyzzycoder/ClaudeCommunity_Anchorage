@@ -224,4 +224,28 @@ Format:
 
 ---
 
-## D-012 — _next decision goes here_
+## D-012 — Say only what the sources support about July 21
+
+- **When:** 20:10 AKDT
+- **Decided by:** Aaron, who asked to check before speaking
+- **Context:** The first draft of the pitch contained three claims that did not
+  survive an audit against the actual sources.
+- **What was wrong:**
+  1. *"About fifty people."* Invented — inferred from the card count. The only
+     sourced phrase is the event page's **"a full room."** Attendees were asked for
+     three items each, so 48 entries could be ~16 people.
+  2. *"Every label was written by the person holding the pen."* False. Only **8 of
+     39** cards carry an explicit Hope/Fear/Question heading. We assigned the rest.
+  3. *"We counted the room: 30 / 12 / 4."* That counted **our 39 selected cards**,
+     six of them written on August 4 — not the July room.
+- **Consequence:** the demo script now carries a sourced/not-sourced table, the
+  app's About dialog and the README were corrected, and the honest version of the
+  finding (~24 of 48 entries read as questions, about twice the fears) is what
+  gets said.
+- **The general rule:** our topic assignments and most kind labels are **editorial,
+  not measurement.** Anything phrased as a count needs to name what was counted.
+- **Revisit if:** anyone gets real attendance numbers from the hosts.
+
+---
+
+## D-013 — _next decision goes here_
